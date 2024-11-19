@@ -110,7 +110,7 @@ public class SimplifiedChinese extends Language {
         yml.addDefault(Messages.COMMAND_PARTY_INFO_OWNER, "\n%bw_lang_prefix%&e队长：&7%bw_party_owner%");
         yml.addDefault(Messages.COMMAND_PARTY_INFO_PLAYERS,"%bw_lang_prefix%&e成员：");
         yml.addDefault(Messages.COMMAND_PARTY_INFO_PLAYER, "&7%bw_player%");
-        yml.addDefault(Messages.COMMAND_PARTY_CHAT_ENABLED_DISABLED, "&e&lPARTY &8&l┃ &fParty chat is now %bw_party_chat_status% &f!");
+        yml.addDefault(Messages.COMMAND_PARTY_CHAT_ENABLED_DISABLED, "&e&l组队 &8&l┃ &f当前组队聊天已被%bw_party_chat_status%&f!");
         yml.addDefault(Messages.COMMAND_FORCESTART_NOT_IN_GAME, "&c▪ &7你不在游戏中！");
         yml.addDefault(Messages.COMMAND_FORCESTART_SUCCESS, "&c▪ &7游戏开始倒计时缩短！");
         yml.addDefault(Messages.COMMAND_FORCESTART_NO_PERM, "%bw_lang_prefix%&7你不可以强制开始游戏！\n&7请考虑赞助以得到对应权限！");
@@ -148,8 +148,8 @@ public class SimplifiedChinese extends Language {
                 "&e&l                        从资源点收集铁锭、金锭、绿宝石和钻石，",
                 "&e&l                        来购买强力装备和进行升级来使自己变强！",
                 "&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"));
-        yml.addDefault(Messages.ARENA_JOIN_DENIED_SELECTOR, "{prefix}&c抱歉，你现在不能加入该游戏。右键来观战！");
-        yml.addDefault(Messages.ARENA_SPECTATE_DENIED_SELECTOR, "{prefix}&c抱歉，你现在不能观战。右键来加入游戏！");
+        yml.addDefault(Messages.ARENA_JOIN_DENIED_SELECTOR, "%bw_lang_prefix%&c抱歉，你现在不能加入该游戏。右键来观战！");
+        yml.addDefault(Messages.ARENA_SPECTATE_DENIED_SELECTOR, "%bw_lang_prefix%&c抱歉，你现在不能观战。右键来加入游戏！");
         yml.addDefault(Messages.ARENA_JOIN_DENIED_NO_PROXY, "&c抱歉，你必须通过BedWarsProxy来加入游戏。 \n&e如果你想设置游戏，你可以给予你自己bw.setup权限来直接进入服务器！");
         yml.addDefault(Messages.ARENA_JOIN_DENIED_NO_TIME, "&c抱歉，游戏已开始。");
         yml.addDefault(Messages.ARENA_SPECTATOR_TELEPORTER_GUI_NAME, "&8传送");
@@ -161,7 +161,7 @@ public class SimplifiedChinese extends Language {
         yml.addDefault(Messages.ARENA_SPECTATOR_FIRST_PERSON_ENTER_SUBTITLE, "&c潜行以退出！");
         yml.addDefault(Messages.ARENA_SPECTATOR_FIRST_PERSON_LEAVE_TITLE, "&e退出旁观者模式");
         yml.addDefault(Messages.ARENA_SPECTATOR_FIRST_PERSON_LEAVE_SUBTITLE, "");
-        yml.addDefault(Messages.ARENA_LEAVE_PARTY_DISBANDED, "{prefix}&c由于组队队长离开了，组队已解散！");
+        yml.addDefault(Messages.ARENA_LEAVE_PARTY_DISBANDED, "%bw_lang_prefix%&c由于组队队长离开了，组队已解散！");
         yml.addDefault(Messages.GENERATOR_HOLOGRAM_TIER, "&e等级&c%bw_tier%");
         yml.addDefault(Messages.GENERATOR_HOLOGRAM_TYPE_DIAMOND, "&b&l钻石");
         yml.addDefault(Messages.GENERATOR_HOLOGRAM_TYPE_EMERALD, "&2&l绿宝石");
@@ -233,8 +233,8 @@ public class SimplifiedChinese extends Language {
         yml.addDefault(Messages.MEANING_DIAMOND_PLURAL, "钻石");
         yml.addDefault(Messages.MEANING_VAULT_SINGULAR, "$");
         yml.addDefault(Messages.MEANING_VAULT_PLURAL, "$");
-        yml.addDefault(Messages.MEANING_ENABLED, "&aEnabled");
-        yml.addDefault(Messages.MEANING_DISABLED, "&cDisabled");
+        yml.addDefault(Messages.MEANING_ENABLED, "&a启用");
+        yml.addDefault(Messages.MEANING_DISABLED, "&c禁用");
         yml.addDefault(Messages.INTERACT_CANNOT_PLACE_BLOCK, "%bw_lang_prefix%&c你不能在这里放置方块！");
         yml.addDefault(Messages.INTERACT_CANNOT_BREAK_BLOCK, "%bw_lang_prefix%&c你只能破坏由玩家放置的方块！");
         yml.addDefault(Messages.INTERACT_CANNOT_BREAK_OWN_BED, "&c你不能破坏自己的床！");
@@ -292,9 +292,9 @@ public class SimplifiedChinese extends Language {
         yml.addDefault(Messages.GAME_END_TOP_PLAYER_CHAT, Arrays.asList(
                 "&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
                 "&f                                   &l起床战争", "", "%bw_winner_format%", "", "",
-                "&e                          &l1st Killer &7- %bw_first_format% - %bw_first_kills%",
-                "&6                          &l2nd Killer &7- %bw_second_format% - %bw_second_kills%",
-                "&c                          &l3rd Killer &7- %bw_third_format% - %bw_third_kills%", "",
+                "&e                          &l击杀第一名 &7- %bw_first_format% - %bw_first_kills%",
+                "&6                          &l击杀第二名 &7- %bw_second_format% - %bw_second_kills%",
+                "&c                          &l击杀第三名 &7- %bw_third_format% - %bw_third_kills%", "",
                 "&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"));
         yml.addDefault(Messages.BED_HOLOGRAM_DEFEND, "&c&l保护你的床！");
         yml.addDefault(Messages.BED_HOLOGRAM_DESTROYED, "&c&l你的床被破坏了！");
